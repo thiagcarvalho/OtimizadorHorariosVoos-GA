@@ -154,7 +154,7 @@ A mutação ocorre em cada gene do indivíduo. Para cada gene, um número aleat�
 
 ### Elitismo
 
-O elitismo consiste em preservar o(s) melhor(es) indivíduo(s) de uma geração para a próxima, garantindo que suas características favoráveis sejam transmitidas. Isso ajuda a manter a qualidade da população e acelerar a convergência para soluções ótimas. No código em questão
+O elitismo consiste em preservar o(s) melhor(es) indivíduo(s) de uma geração para a próxima, garantindo que suas características favoráveis sejam transmitidas. Isso ajuda a manter a qualidade da população e acelerar a convergência para soluções ótimas. No código em questão
 comparamos o melhor indivíduo da população anterior com o melhor indivíduo da nova população. Se o melhor indivíduo da população anterior tiver um valor de fitness menor ao melhor indivíduo da nova população, substituímos o pior indivíduo da nova população pelo melhor
 indivíduo da população anterior.
 
