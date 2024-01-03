@@ -171,18 +171,9 @@ class ga:
         self.curva_media.append(pop[meio].fitness)
         print(i, pop[-1].fitness)
         return pop[-1].ind, pop[-1].fitness
+
     def torneio(self, pop):
-        def torneio(self, pop):
 
-            aux = uniform(0, 1)
-            torn = sample(pop, self.ntoneio)
-
-
-            if aux <= 0.75:
-                i = min(torn, key=lambda indiv: indiv.fitness)
-            else:
-                i = max(torn, key=lambda indiv: indiv.fitness)
-            return i
         aux = uniform(0, 1)
         torn = sample(pop, self.ntoneio)
 
@@ -191,7 +182,10 @@ class ga:
             i = min(torn, key=lambda indiv: indiv.fitness)
         else:
             i = max(torn, key=lambda indiv: indiv.fitness)
+
         return i
+
+
 
     def crossover(self, pai1: individuo, pai2: individuo):
         ind_filho = individuo(self.df)
